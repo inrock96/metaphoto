@@ -35,3 +35,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+metaphoto-api/node_modules
+metaphoto-api/dist
+.elasticbeanstalk

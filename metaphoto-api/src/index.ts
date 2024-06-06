@@ -5,7 +5,9 @@ import photoRoutes from './routes/photo.routes';
 const app = express()
 
 const PORT = process.env.PORT || 3000;
-app.use(cors());
+app.use(cors({
+    origin: 'http://isamayoa-test.s3-website.us-east-2.amazonaws.com'
+}));
 
 app.use(morgan('tiny'))
 app.use('/externalapi',photoRoutes)
